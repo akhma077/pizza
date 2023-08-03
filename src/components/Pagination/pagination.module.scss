@@ -1,0 +1,35 @@
+.root {
+  column-gap: 10px;
+  display: flex;
+  li {
+    display: inline-block;
+    &:global {
+      &.selected {
+        background-color: #fe5f1e;
+        border-radius: 30px;
+
+        a {
+          color: white;
+        }
+      }
+    }
+    a {
+      color: #fe5f1e;
+      text-align: center;
+      line-height: 18px;
+      padding: 10px;
+      border: 1px solid #fe5f1e;
+      border-radius: 30px;
+      height: 40px;
+      width: 40px;
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
+      display: inline-block;
+
+      &:hover {
+        background: #fe5f1e;
+        color: white;
+      }
+    }
+  }
+}
